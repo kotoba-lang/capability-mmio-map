@@ -8,3 +8,12 @@
   (is (= [] (repository/validate-manifest
              (contracts/capability-contract)
              capability/manifest))))
+
+(deftest width-alignment-and-region-end-are-all-checked
+  (is (capability/access-valid? 512 511 1))
+  (is (capability/access-valid? 512 510 2))
+  (is (capability/access-valid? 512 508 4))
+  (is (not (capability/access-valid? 512 511 2)))
+  (is (not (capability/access-valid? 512 510 4)))
+  (is (not (capability/access-valid? 512 4 3)))
+  (is (not (capability/access-valid? 512 -1 1))))
