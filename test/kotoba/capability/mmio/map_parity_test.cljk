@@ -1,6 +1,6 @@
 (ns kotoba.capability.mmio.map-parity-test
   "Parity test: the ClojureScript-portable .cljc implementation of
-  `access-valid?` (src/kotoba/capability/mmio/map.cljc) and the compiled
+  `access-valid?` (src/kotoba/capability/mmio/map.cljk) and the compiled
   js-browser Kotoba artifact (src/kotoba/capability/mmio/map.kotoba) must
   agree on the same MMIO access cases.
 
