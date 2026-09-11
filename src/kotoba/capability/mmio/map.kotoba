@@ -1,4 +1,4 @@
-;; Kotoba port of src/kotoba/capability/mmio/map.cljc (product semantics only).
+;; Kotoba port of src/kotoba/capability/mmio/map.cljk (product semantics only).
 ;; `manifest` stays in the .cljc original: it is repository metadata, not
 ;; semantics. The parity test compares `access-valid?` on both sides.
 ;;
